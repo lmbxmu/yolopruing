@@ -101,20 +101,20 @@ $ tensorboard --logdir='logs' --port=6006
 
 ```shell
   -h, --help            Show this help message and exit
-  --epochs EPOCHS				Num of epochs. default:100
-  --batch_size 					Size of each image batch. default:8
+  --epochs EPOCHS	Num of epochs. default:100
+  --batch_size 	Size of each image batch. default:8
   --gradient_accumulations Number of gradient accums before step. default:2
-  --model_def						Path to model definition file. default:"config/yolov3.cfg"
-  --data_config 			  Path to data config file. default:"config/coco.data"
+  --model_def		Path to model definition file. default:"config/yolov3.cfg"
+  --data_config 	Path to data config file. default:"config/coco.data"
   --pretrained_weights  if specified starts from checkpoint model
-  --n_cpu 							number of cpu threads to use during batch generation.default:8 
-  --img_size 						size of each image dimension. default:8
+  --n_cpu 	number of cpu threads to use during batch generation.default:8 
+  --img_size 	size of each image dimension. default:8
   --evaluation_interval interval evaluations on validation set. default:1
-  --compute_map 				if True computes mAP every tenth batch. default:False
-  --lr 									learning rate. default:0.001
+  --compute_map 	if True computes mAP every tenth batch. default:False
+  --lr 	learning rate. default:0.001
   --job_dir JOB_DIR     The directory where the summaries will be stored.
                         default:./experiments
-  --lr_type             lr scheduler. default: step. optional:exp/cos/step/fixed
+  --lr_type   lr scheduler. default: step. optional:exp/cos/step/fixed
   --pr_cfg 		prune percentage cofiguration of blocks. eg: 0.3 0.3 0.3 0.3 0.3
   --random_rule		random_rule of preserving filters defaut:random_pretrain. optional:l1_pretrain
 ```
