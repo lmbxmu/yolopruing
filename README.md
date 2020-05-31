@@ -115,9 +115,7 @@ $ tensorboard --logdir='logs' --port=6006
   --job_dir JOB_DIR     The directory where the summaries will be stored.
                         default:./experiments
   --lr_type             lr scheduler. default: step. optional:exp/cos/step/fixed
-  --pr_cfg 						
-  prune percentage cofiguration of blocks. eg: 0.3 0.3 0.3 0.3 0.3
-  --random_rule				
-  random_rule of preserving filters defaut:random_pretrain. optional:l1_pretrain
+  --pr_cfg 		prune percentage cofiguration of blocks. eg: 0.3 0.3 0.3 0.3 0.3
+  --random_rule		random_rule of preserving filters defaut:random_pretrain. optional:l1_pretrain
 ```
 
