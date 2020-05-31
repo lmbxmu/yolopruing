@@ -49,12 +49,6 @@ Also, change items in config/coco.data
 - train 
 - valid
 
-## Inference
-
-Evaluates the model on COCO test.
-
-    $ python3 test.py --weights_path weights/yolov3.weights --pr_cfg 0.4 0.4 0.5 0.5 0.6
-
 ## Train
 #### Example (COCO)
 To train on COCO using a Darknet-53 backend pretrained on ImageNet run: 
@@ -96,6 +90,12 @@ Track training progress in Tensorboard:
 ```
 $ tensorboard --logdir='logs' --port=6006
 ```
+
+## Inference
+
+Evaluates the model on COCO test.
+
+    $ python3 test.py --weights_path weights/yolov3.weights --pr_cfg 0.4 0.4 0.5 0.5 0.6
 
 #### Other Arguments
 
