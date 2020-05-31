@@ -1,0 +1,238 @@
+05/20 07:44:28 PM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/20 07:44:28 PM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 08:15:37 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 08:15:37 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 09:18:01 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 09:18:01 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 09:37:21 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 09:37:21 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 09:38:18 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 09:38:18 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 09:38:43 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 09:38:43 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 09:45:58 AM | Namespace(batch_size=2, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 09:45:58 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 10:37:50 AM | Namespace(batch_size=2, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 10:37:50 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 10:47:05 AM | Namespace(batch_size=2, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 10:47:05 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 11:11:03 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 11:11:03 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 11:11:38 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.8, 0.8, 0.8, 0.8, 0.8], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 11:11:38 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 02:48:34 PM | Epoch[0] :	Total_loss 223.6009521484375	
+05/21 03:12:00 PM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 03:12:00 PM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 03:12:31 PM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/21 03:12:31 PM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/21 08:20:42 PM | Epoch[0] :	Total_loss 13.433918952941895	
+05/22 01:34:39 AM | Epoch[1] :	Total_loss 11.00419807434082	
+05/22 05:04:17 AM | Epoch[2] :	Total_loss 9.48192024230957	
+05/22 05:58:30 AM | Epoch[3] :	Total_loss 8.492500305175781	
+05/22 06:17:51 AM | Epoch[4] :	Total_loss 7.835356712341309	
+05/22 06:37:19 AM | Epoch[5] :	Total_loss 7.572766304016113	
+05/22 06:56:34 AM | Epoch[6] :	Total_loss 7.706087112426758	
+05/22 07:16:02 AM | Epoch[7] :	Total_loss 6.536293983459473	
+05/22 07:35:26 AM | Epoch[8] :	Total_loss 5.93195915222168	
+05/22 07:54:41 AM | Epoch[9] :	Total_loss 6.5266923904418945	
+05/22 08:14:05 AM | Epoch[10] :	Total_loss 4.7775726318359375	
+05/22 08:33:43 AM | Epoch[11] :	Total_loss 6.636561393737793	
+05/22 09:06:33 AM | Epoch[12] :	Total_loss 4.005457878112793	
+05/22 09:26:05 AM | Epoch[13] :	Total_loss 7.349569797515869	
+05/22 09:45:31 AM | Epoch[14] :	Total_loss 7.0757293701171875	
+05/22 10:04:56 AM | Epoch[15] :	Total_loss 7.484684944152832	
+05/22 10:24:36 AM | Epoch[16] :	Total_loss 5.783584117889404	
+05/22 10:44:00 AM | Epoch[17] :	Total_loss 5.925465106964111	
+05/22 11:03:32 AM | Epoch[18] :	Total_loss 8.129246711730957	
+05/22 11:22:44 AM | Epoch[19] :	Total_loss 5.663215160369873	
+05/22 11:42:12 AM | Epoch[20] :	Total_loss 10.685815811157227	
+05/22 12:01:35 PM | Epoch[21] :	Total_loss 6.505776405334473	
+05/22 12:20:58 PM | Epoch[22] :	Total_loss 8.181852340698242	
+05/22 12:40:14 PM | Epoch[23] :	Total_loss 4.435283184051514	
+05/22 12:59:29 PM | Epoch[24] :	Total_loss 4.746715545654297	
+05/22 01:18:47 PM | Epoch[25] :	Total_loss 3.7058217525482178	
+05/22 01:37:54 PM | Epoch[26] :	Total_loss 4.813581466674805	
+05/22 01:57:13 PM | Epoch[27] :	Total_loss 6.432309627532959	
+05/22 02:16:44 PM | Epoch[28] :	Total_loss 4.556186199188232	
+05/22 02:36:09 PM | Epoch[29] :	Total_loss 6.974676132202148	
+05/22 02:55:52 PM | Epoch[30] :	Total_loss 4.3183064460754395	
+05/22 03:15:12 PM | Epoch[31] :	Total_loss 6.059642791748047	
+05/22 03:34:39 PM | Epoch[32] :	Total_loss 5.644803047180176	
+05/22 03:54:15 PM | Epoch[33] :	Total_loss 4.131856918334961	
+05/22 04:13:36 PM | Epoch[34] :	Total_loss 4.516683101654053	
+05/22 04:33:07 PM | Epoch[35] :	Total_loss 3.4348936080932617	
+05/22 04:52:25 PM | Epoch[36] :	Total_loss 4.899022102355957	
+05/22 05:11:44 PM | Epoch[37] :	Total_loss 5.332079887390137	
+05/22 05:31:14 PM | Epoch[38] :	Total_loss 5.760509967803955	
+05/22 05:50:49 PM | Epoch[39] :	Total_loss 5.218595504760742	
+05/22 06:10:09 PM | Epoch[40] :	Total_loss 6.239986419677734	
+05/22 06:29:25 PM | Epoch[41] :	Total_loss 6.847934722900391	
+05/22 06:48:36 PM | Epoch[42] :	Total_loss 5.420723915100098	
+05/22 07:07:47 PM | Epoch[43] :	Total_loss 4.8532304763793945	
+05/22 07:27:11 PM | Epoch[44] :	Total_loss 5.591054439544678	
+05/22 07:46:33 PM | Epoch[45] :	Total_loss 6.6620612144470215	
+05/22 08:06:00 PM | Epoch[46] :	Total_loss 6.324821949005127	
+05/22 08:39:06 PM | Epoch[47] :	Total_loss 5.119845390319824	
+05/22 08:58:38 PM | Epoch[48] :	Total_loss 4.633479595184326	
+05/22 09:17:59 PM | Epoch[49] :	Total_loss 4.613161563873291	
+05/22 09:37:34 PM | Epoch[50] :	Total_loss 5.654583930969238	
+05/22 09:57:05 PM | Epoch[51] :	Total_loss 4.456208229064941	
+05/23 05:18:37 AM | Epoch[51] :	Map 0.3352	
+05/23 05:18:37 AM | Best_map 0.3352	
+05/23 08:11:22 AM | Namespace(batch_size=8, checkpoint_interval=1, compute_map=False, data_config='config/coco.data', epochs=100, evaluation_interval=1, gradient_accumulations=2, img_size=416, job_dir='./experiments/class_6_pr_1', lr=0.001, lr_type='ori', model_def='config/yolov3.cfg', multiscale_training=True, n_cpu=8, pr_cfg=[0.4, 0.4, 0.5, 0.5, 0.6], pretrained_weights='weights/darknet53.conv.74', random_rule='random_pretrain')
+05/23 08:11:22 AM | {'gpus': '0,1,2,3', 'num_workers': '10', 'classes': '6', 'train': '/media/disk2/zyx/coco_class_6/class_train.txt', 'valid': '/media/disk2/zyx/coco_class_6/class_val.txt', 'names': 'data/coco.names', 'backup': 'backup/', 'eval': 'coco'}
+05/23 08:32:18 AM | Epoch[0] :	Total_loss 10.788900375366211	
+05/23 08:52:01 AM | Epoch[1] :	Total_loss 10.114509582519531	
+05/23 09:11:29 AM | Epoch[2] :	Total_loss 10.152656555175781	
+05/23 09:31:04 AM | Epoch[3] :	Total_loss 8.812809944152832	
+05/23 09:50:55 AM | Epoch[4] :	Total_loss 6.942709445953369	
+05/23 10:10:42 AM | Epoch[5] :	Total_loss 6.165719509124756	
+05/23 10:30:25 AM | Epoch[6] :	Total_loss 7.259723663330078	
+05/23 10:50:30 AM | Epoch[7] :	Total_loss 8.757291793823242	
+05/23 11:10:23 AM | Epoch[8] :	Total_loss 8.768489837646484	
+05/23 11:29:46 AM | Epoch[9] :	Total_loss 7.7859601974487305	
+05/23 11:49:40 AM | Epoch[10] :	Total_loss 8.291240692138672	
+05/23 12:09:32 PM | Epoch[11] :	Total_loss 5.975900650024414	
+05/23 12:29:08 PM | Epoch[12] :	Total_loss 6.122959613800049	
+05/23 12:48:44 PM | Epoch[13] :	Total_loss 5.259377956390381	
+05/23 01:08:22 PM | Epoch[14] :	Total_loss 6.158694267272949	
+05/23 01:28:12 PM | Epoch[15] :	Total_loss 5.761709213256836	
+05/23 01:47:59 PM | Epoch[16] :	Total_loss 6.142162322998047	
+05/23 02:07:50 PM | Epoch[17] :	Total_loss 5.646881103515625	
+05/23 02:27:36 PM | Epoch[18] :	Total_loss 5.933860778808594	
+05/23 02:47:23 PM | Epoch[19] :	Total_loss 7.521827220916748	
+05/23 03:06:58 PM | Epoch[20] :	Total_loss 8.071657180786133	
+05/23 03:26:57 PM | Epoch[21] :	Total_loss 7.096622467041016	
+05/23 03:46:39 PM | Epoch[22] :	Total_loss 6.222207069396973	
+05/23 04:06:13 PM | Epoch[23] :	Total_loss 5.423065185546875	
+05/23 04:25:51 PM | Epoch[24] :	Total_loss 6.07154655456543	
+05/23 04:45:38 PM | Epoch[25] :	Total_loss 7.400650501251221	
+05/23 05:05:30 PM | Epoch[26] :	Total_loss 5.826472759246826	
+05/23 05:25:14 PM | Epoch[27] :	Total_loss 6.693076133728027	
+05/23 05:45:15 PM | Epoch[28] :	Total_loss 6.23945426940918	
+05/23 06:04:53 PM | Epoch[29] :	Total_loss 7.077121734619141	
+05/23 06:24:48 PM | Epoch[30] :	Total_loss 4.6031622886657715	
+05/23 06:44:35 PM | Epoch[31] :	Total_loss 6.15150260925293	
+05/23 07:03:55 PM | Epoch[32] :	Total_loss 6.2378034591674805	
+05/23 07:23:32 PM | Epoch[33] :	Total_loss 6.132880210876465	
+05/23 07:42:57 PM | Epoch[34] :	Total_loss 4.77681303024292	
+05/23 08:02:13 PM | Epoch[35] :	Total_loss 5.427745819091797	
+05/23 08:35:50 PM | Epoch[36] :	Total_loss 6.308021545410156	
+05/23 08:55:09 PM | Epoch[37] :	Total_loss 5.594729423522949	
+05/23 09:14:26 PM | Epoch[38] :	Total_loss 6.2115325927734375	
+05/23 09:33:40 PM | Epoch[39] :	Total_loss 4.283466339111328	
+05/23 09:52:40 PM | Epoch[40] :	Total_loss 5.15257453918457	
+05/23 10:11:48 PM | Epoch[41] :	Total_loss 5.786921977996826	
+05/23 10:30:59 PM | Epoch[42] :	Total_loss 3.5872068405151367	
+05/23 10:50:11 PM | Epoch[43] :	Total_loss 4.526900291442871	
+05/23 11:09:28 PM | Epoch[44] :	Total_loss 4.523171424865723	
+05/23 11:28:46 PM | Epoch[45] :	Total_loss 6.017475128173828	
+05/23 11:47:59 PM | Epoch[46] :	Total_loss 4.20251989364624	
+05/24 12:07:18 AM | Epoch[47] :	Total_loss 4.891765594482422	
+05/24 12:40:31 AM | Epoch[48] :	Total_loss 5.035085201263428	
+05/24 12:59:36 AM | Epoch[49] :	Total_loss 5.582479953765869	
+05/24 01:19:00 AM | Epoch[50] :	Total_loss 4.846556663513184	
+05/24 01:38:10 AM | Epoch[51] :	Total_loss 4.399200916290283	
+05/24 01:49:25 AM | Epoch[51] :	Map 0.3387	
+05/24 01:49:25 AM | Best_map 0.3387	
+05/24 02:08:25 AM | Epoch[52] :	Total_loss 7.295503616333008	
+05/24 02:18:43 AM | Epoch[52] :	Map 0.2467	
+05/24 02:37:55 AM | Epoch[53] :	Total_loss 5.473921298980713	
+05/24 02:48:31 AM | Epoch[53] :	Map 0.3282	
+05/24 03:07:49 AM | Epoch[54] :	Total_loss 5.5409650802612305	
+05/24 03:25:04 AM | Epoch[54] :	Map 0.3140	
+05/24 03:52:20 AM | Epoch[55] :	Total_loss 4.428345680236816	
+05/24 04:08:29 AM | Epoch[55] :	Map 0.3056	
+05/24 04:35:12 AM | Epoch[56] :	Total_loss 3.910658836364746	
+05/24 04:51:08 AM | Epoch[56] :	Map 0.3034	
+05/24 05:18:16 AM | Epoch[57] :	Total_loss 6.499433517456055	
+05/24 05:34:21 AM | Epoch[57] :	Map 0.3278	
+05/24 06:01:44 AM | Epoch[58] :	Total_loss 4.207290172576904	
+05/24 06:17:42 AM | Epoch[58] :	Map 0.2921	
+05/24 06:45:42 AM | Epoch[59] :	Total_loss 4.629331588745117	
+05/24 07:02:38 AM | Epoch[59] :	Map 0.3308	
+05/24 07:30:09 AM | Epoch[60] :	Total_loss 4.429932594299316	
+05/24 07:46:27 AM | Epoch[60] :	Map 0.3077	
+05/24 08:14:14 AM | Epoch[61] :	Total_loss 2.2631373405456543	
+05/24 08:30:49 AM | Epoch[61] :	Map 0.3154	
+05/24 08:58:51 AM | Epoch[62] :	Total_loss 4.2121405601501465	
+05/24 09:14:45 AM | Epoch[62] :	Map 0.3301	
+05/24 09:39:01 AM | Epoch[63] :	Total_loss 3.703035354614258	
+05/24 09:52:26 AM | Epoch[63] :	Map 0.2890	
+05/24 10:12:05 AM | Epoch[64] :	Total_loss 3.08524489402771	
+05/24 10:23:05 AM | Epoch[64] :	Map 0.3303	
+05/24 10:42:13 AM | Epoch[65] :	Total_loss 4.6829633712768555	
+05/24 10:52:28 AM | Epoch[65] :	Map 0.3447	
+05/24 10:52:28 AM | Best_map 0.3447	
+05/24 11:14:06 AM | Epoch[66] :	Total_loss 4.872218132019043	
+05/24 11:31:00 AM | Epoch[66] :	Map 0.3292	
+05/24 11:55:43 AM | Epoch[67] :	Total_loss 4.828526973724365	
+05/24 12:10:37 PM | Epoch[67] :	Map 0.3144	
+05/24 12:36:14 PM | Epoch[68] :	Total_loss 6.817949295043945	
+05/24 12:50:54 PM | Epoch[68] :	Map 0.3262	
+05/24 01:15:52 PM | Epoch[69] :	Total_loss 3.8170740604400635	
+05/24 01:30:17 PM | Epoch[69] :	Map 0.3425	
+05/24 01:55:02 PM | Epoch[70] :	Total_loss 4.652206897735596	
+05/24 02:09:25 PM | Epoch[70] :	Map 0.3440	
+05/24 02:34:23 PM | Epoch[71] :	Total_loss 3.5701746940612793	
+05/24 02:48:47 PM | Epoch[71] :	Map 0.3096	
+05/24 03:13:20 PM | Epoch[72] :	Total_loss 3.184725284576416	
+05/24 03:27:34 PM | Epoch[72] :	Map 0.3394	
+05/24 03:51:55 PM | Epoch[73] :	Total_loss 4.989957332611084	
+05/24 04:09:11 PM | Epoch[73] :	Map 0.3385	
+05/24 04:33:47 PM | Epoch[74] :	Total_loss 7.070262908935547	
+05/24 04:47:55 PM | Epoch[74] :	Map 0.3080	
+05/24 05:10:53 PM | Epoch[75] :	Total_loss 5.827394485473633	
+05/24 05:27:24 PM | Epoch[75] :	Map 0.3198	
+05/24 05:56:48 PM | Epoch[76] :	Total_loss 3.2776217460632324	
+05/24 06:15:15 PM | Epoch[76] :	Map 0.3574	
+05/24 06:15:15 PM | Best_map 0.3574	
+05/24 06:45:40 PM | Epoch[77] :	Total_loss 4.68450927734375	
+05/24 07:03:25 PM | Epoch[77] :	Map 0.3553	
+05/24 07:34:18 PM | Epoch[78] :	Total_loss 2.944140911102295	
+05/24 07:53:08 PM | Epoch[78] :	Map 0.3496	
+05/24 08:23:20 PM | Epoch[79] :	Total_loss 4.171884536743164	
+05/24 08:41:52 PM | Epoch[79] :	Map 0.3300	
+05/24 09:13:10 PM | Epoch[80] :	Total_loss 5.909676551818848	
+05/24 09:31:47 PM | Epoch[80] :	Map 0.3252	
+05/24 09:59:54 PM | Epoch[81] :	Total_loss 2.973430633544922	
+05/24 10:15:45 PM | Epoch[81] :	Map 0.3497	
+05/24 10:42:06 PM | Epoch[82] :	Total_loss 5.343190670013428	
+05/24 10:58:02 PM | Epoch[82] :	Map 0.3365	
+05/24 11:24:55 PM | Epoch[83] :	Total_loss 5.206277847290039	
+05/24 11:40:33 PM | Epoch[83] :	Map 0.3040	
+05/25 12:07:39 AM | Epoch[84] :	Total_loss 4.098128795623779	
+05/25 12:23:35 AM | Epoch[84] :	Map 0.3518	
+05/25 12:50:55 AM | Epoch[85] :	Total_loss 5.026147842407227	
+05/25 01:12:07 AM | Epoch[85] :	Map 0.3211	
+05/25 01:37:43 AM | Epoch[86] :	Total_loss 5.089737415313721	
+05/25 01:52:52 AM | Epoch[86] :	Map 0.3629	
+05/25 01:52:52 AM | Best_map 0.3629	
+05/25 02:19:08 AM | Epoch[87] :	Total_loss 3.5281357765197754	
+05/25 02:33:51 AM | Epoch[87] :	Map 0.3624	
+05/25 02:59:06 AM | Epoch[88] :	Total_loss 5.602934837341309	
+05/25 03:14:15 AM | Epoch[88] :	Map 0.3218	
+05/25 03:39:34 AM | Epoch[89] :	Total_loss 4.297764778137207	
+05/25 03:52:48 AM | Epoch[89] :	Map 0.3602	
+05/25 04:14:26 AM | Epoch[90] :	Total_loss 3.569430112838745	
+05/25 04:24:51 AM | Epoch[90] :	Map 0.3751	
+05/25 04:24:51 AM | Best_map 0.3751	
+05/25 04:44:10 AM | Epoch[91] :	Total_loss 3.7481024265289307	
+05/25 04:54:45 AM | Epoch[91] :	Map 0.3465	
+05/25 05:13:54 AM | Epoch[92] :	Total_loss 3.591893196105957	
+05/25 05:24:25 AM | Epoch[92] :	Map 0.3327	
+05/25 05:43:30 AM | Epoch[93] :	Total_loss 3.393740653991699	
+05/25 05:54:08 AM | Epoch[93] :	Map 0.3596	
+05/25 06:13:31 AM | Epoch[94] :	Total_loss 5.890819549560547	
+05/25 06:23:51 AM | Epoch[94] :	Map 0.3476	
+05/25 06:43:10 AM | Epoch[95] :	Total_loss 4.290566444396973	
+05/25 06:53:41 AM | Epoch[95] :	Map 0.3536	
+05/25 07:13:03 AM | Epoch[96] :	Total_loss 4.926070213317871	
+05/25 07:23:43 AM | Epoch[96] :	Map 0.3379	
+05/25 07:42:40 AM | Epoch[97] :	Total_loss 3.8919577598571777	
+05/25 07:52:53 AM | Epoch[97] :	Map 0.3420	
+05/25 08:12:15 AM | Epoch[98] :	Total_loss 3.783933639526367	
+05/25 08:22:31 AM | Epoch[98] :	Map 0.3512	
+05/25 08:41:52 AM | Epoch[99] :	Total_loss 5.512605667114258	
+05/25 08:52:31 AM | Epoch[99] :	Map 0.3667	
+05/25 08:52:31 AM | Best_map 0.3751	
