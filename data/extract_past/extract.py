@@ -7,33 +7,37 @@ import matplotlib.pyplot as plt
 import cv2
 from PIL import Image, ImageDraw
 
-import xml.etree.ElementTree as ET
-import pickle
-from os import listdir, getcwd
-from os.path import join
-
-import argparse
-
-#if the dir is not exists,make it,else delete it
-def mkr(path):
-    if os.path.exists(path):
-        shutil.rmtree(path)
-        os.mkdir(path)
-    else:
-        os.mkdir(path)
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--save_path", type=str, default='/media/coco_class_6', help="save_path")
-parser.add_argument("--data_dir", type=str, default='/media/coco', help="data_dir")
-args = parser.parse_args()
-
-
 #the path you want to save your results for coco to voc
-savepath = args.save_path
-dataDir = args.data_dir
-mkr(savepath)
-datasets_list=['train2014', 'val2014']
-classes_names = ["bus", "truck"] 
+savepath="/media/disk2/zyx/coco_class_6/"
+img_dir=savepath+'images/val2014/'
+anno_dir=savepath+'Annotations/val2014/'
+# datasets_list=['train2014', 'val2014']
+# datasets_list=['train2014']
+datasets_list=['val2014']
+classes_names = ["person","bicycle","car","motorbike", "bus", "truck"] 
+# classes_names = ['parking meter']
+# classes_names = ["person", "bicycle", "car", "motorcycle","bus"]
+
+# classes_names = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat", "traffic light",
+#            "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow",
+#            "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee",
+#            "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard",
+#            "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple",
+#            "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "couch",
+#            "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse", "remote", "keyboard", "cell phone",
+#            "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors", "teddy bear",
+#            "hair drier", "toothbrush"]
+# classes_names = ["person", "bicycle", "car", "motorcycle","bus", "truck", "boat",
+#               "traffic light","stop sign", "parking meter",
+#               "cat", "dog","umbrella", "suitcase", "baseball bat",
+#               "bottle", "wine glass", "cup","bowl",
+#               "banana", "apple","orange", "broccoli", "carrot", "hot dog", "cake",
+#               "chair", "couch","bench","potted plant", "bed", "dining table", "tv", "laptop","cell phone",
+#               "microwave","refrigerator", "book", "vase", "teddy bear"]
+#classes_names = [ "apple","banana", "broccoli","carrot","knife","orange","teddy bear","toothbrush","umbrella"]
+# classes_names = ['truck']
+#Store annotations and train2014/val2014/... in this folder
+dataDir= '/media/disk2/zyx/coco/'  
 
 headstr = """\
 <annotation>
@@ -71,8 +75,15 @@ tailstr = '''\
 </annotation>
 '''
 
-
-
+#if the dir is not exists,make it,else delete it
+def mkr(path):
+    if os.path.exists(path):
+        shutil.rmtree(path)
+        os.mkdir(path)
+    else:
+        os.mkdir(path)
+mkr(img_dir)
+mkr(anno_dir)
 def id2name(coco):
     classes=dict()
     for cls in coco.dataset['categories']:
@@ -86,12 +97,14 @@ def write_xml(anno_path,head, objs, tail):
         f.write(objstr%(obj[0],obj[1],obj[2],obj[3],obj[4]))
     f.write(tail)
 
-def save_annotations_and_imgs(coco,dataset,filename,objs,anno_dir,img_dir):
+
+def save_annotations_and_imgs(coco,dataset,filename,objs):
     #eg:COCO_train2014_000000196610.jpg-->COCO_train2014_000000196610.xml
     anno_path=anno_dir+filename[:-3]+'xml'
     img_path=dataDir+'images/'+dataset+'/'+filename
     # print(img_path)
     dst_imgpath=img_dir+filename
+    print(img_path,'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
 
     img=cv2.imread(img_path)
     # print(img)
@@ -104,6 +117,7 @@ def save_annotations_and_imgs(coco,dataset,filename,objs,anno_dir,img_dir):
     head=headstr % (filename, img.shape[1], img.shape[0], img.shape[2])
     tail = tailstr
     write_xml(anno_path,head, objs, tail)
+
 
 def showimg(coco,dataset,img,classes,cls_id,show=True):
     global dataDir
@@ -136,52 +150,11 @@ def showimg(coco,dataset,img,classes,cls_id,show=True):
         plt.show()
 
     return objs
- 
-def convert(size, box):
-    dw = 1./(size[0])
-    dh = 1./(size[1])
-    x = (box[0] + box[1])/2.0 - 1
-    y = (box[2] + box[3])/2.0 - 1
-    w = box[1] - box[0]
-    h = box[3] - box[2]
-    x = x*dw
-    w = w*dw
-    y = y*dh
-    h = h*dh
-    return (x,y,w,h)
- 
-def convert_annotation(image_id, in_path, out_path):
-    in_file = open(in_path+'%s.xml'%(image_id))
-    out_file = open(out_path+'%s.txt'%(image_id), 'w')
-    tree=ET.parse(in_file)
-    root = tree.getroot()
-    size = root.find('size')
-    w = int(size.find('width').text)
-    h = int(size.find('height').text)
- 
-    for obj in root.iter('object'):
-        difficult = obj.find('difficult').text
-        cls = obj.find('name').text
-        print(cls)
-        if cls not in classes or int(difficult)==1:
-            continue
-        cls_id = classes.index(cls)
-        xmlbox = obj.find('bndbox')
-        b = (float(xmlbox.find('xmin').text), float(xmlbox.find('xmax').text), float(xmlbox.find('ymin').text), float(xmlbox.find('ymax').text))
-        bb = convert((w,h), b)
-        out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
- 
-
 
 for dataset in datasets_list:
     #./COCO/annotations/instances_train2014.json
     annFile='{}/annotations/instances_{}.json'.format(dataDir,dataset)
-    mkr(savepath+'images/')
-    mkr(savepath+'Annotations/')
-    img_dir=savepath+'images/'+dataset+'/'
-    anno_dir=savepath+'Annotations/'+dataset+'/'
-    mkr(img_dir)
-    mkr(anno_dir)
+
     #COCO API for initializing annotated data
     coco = COCO(annFile)
     '''
@@ -211,40 +184,5 @@ for dataset in datasets_list:
             # print(filename)
             objs=showimg(coco, dataset, img, classes,classes_ids,show=False)
             print(objs)
-            save_annotations_and_imgs(coco, dataset, filename, objs, anno_dir,img_dir)
-
-    cnt = 0
-
-    for i, file_name in enumerate(os.listdir(anno_dir)):
-        fsize = os.path.getsize(os.path.join(anno_dir,file_name))
-        if fsize == 410:
-            print('removing {} of size{}'.format(file_name,fsize))
-            os.remove(os.path.join(img_dir, file_name[:-3]+'jpg'))
-            os.remove(os.path.join(anno_dir, file_name))
-            cnt += 1 
-
-    print('remove {} files'.format(cnt))
-
-    data_path = img_dir
-    img_names = os.listdir(data_path)
-    
-    if dataset == 'train2014':
-        list_file = open(savepath+'class_train.txt', 'w')
-    else:
-        list_file = open(savepath+'class_val.txt', 'w')
-
-    in_path = anno_dir
-    out_path = savepath+'labels/'+dataset+'/'
-    for img_name in img_names:
-        if not os.path.exists(out_path):
-            os.makedirs(out_path)
-     
-        list_file.write(img_dir+'%s\n'%img_name)
-        image_id = img_name[:-4]
-        convert_annotation(image_id, in_path, out_path)
-     
-    list_file.close()
-
-
-
+            save_annotations_and_imgs(coco, dataset, filename, objs)
 

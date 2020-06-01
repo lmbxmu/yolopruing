@@ -5,51 +5,20 @@ Pruning yolov3 and train on 6 class of COCO2014: person, bicycle, car, motorbike
     $ cd weights/
     $ bash download_weights.sh
 
-##### Download COCO
+##### Download COCO dataset
     $ cd data/
     $ bash get_coco_dataset.sh
 
 ##### Split COCO dataset
 
-Change items in data/extract.py
-
-- savepath : path to save
-- dataset_List : train2014/val2014. You should change items between these and run extract.py two times
-- img_dir: same as dataset_List, change between train and val
-- anno_dif: same as dataset_List, change between train and val
-- dataDir path of COCO dataset
-
 ```
-$ cd data/
-$ python3 extract.py
+$ python3 python3 extract.py --save_path /media/coco_class_6 --data_dir /media/coco/
+-save_path           target path to save specific class of coco dataset
+--data_dir           path of coco dataset
 ```
-
-Change items in data/class_refine.py， Also, You should change items between 'train' and 'val', then run class_refine.py two times.
-
-- Dir
-- ImageDir
-
-```
-$ python3 class_refine.py
-```
-
-Change items in data/turn_txt.py. Same as above, You should change items between 'train' and 'val', then run turn_txt.py two times.
-
-- class
-- infile
-- outfile
-- datapath
-
-```
-$ python3 turn_txt.py
-```
-
-Also, change items in config/coco.data
-
-- train 
-- valid
 
 ## Train
+
 #### Example (COCO)
 To train on COCO using a Darknet-53 backend pretrained on ImageNet run: 
 ```shell
