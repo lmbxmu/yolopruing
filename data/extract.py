@@ -33,7 +33,7 @@ savepath = args.save_path
 dataDir = args.data_dir 
 mkr(savepath)
 datasets_list=['train2014', 'val2014']
-classes_names = ["bus", "truck"] 
+classes_names = ["person","bicycle","car","motorbike", "bus", "truck"] 
 
 headstr = """\
 <annotation>
