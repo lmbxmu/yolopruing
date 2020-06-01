@@ -93,9 +93,23 @@ $ tensorboard --logdir='logs' --port=6006
 
 ## Inference
 
+| Model(link)                                                  | Cfg                 | Parameter(prune) | FLOPs(prune)   | Map    |
+| ------------------------------------------------------------ | ------------------- | ---------------- | -------------- | ------ |
+| [Baseline](https://drive.google.com/file/d/1C2mjAH5bjvk-zRf5dytGoVrRTQehDQpn/view?usp=sharing) | 0 0 0 0 0           | 61.5M(0%)        | 12435.1M(0%)   | 0.4208 |
+| [Pr1](https://drive.google.com/file/d/1CRZcXqNFhWmFBeNXvL-v1wUlhGajGj9-/view?usp=sharing) | 0.4 0.4 0.5 0.5 0.6 | 11.8M(81.9%)     | 3204.9M(74.3%) | 0.3751 |
+| [Pr2](https://drive.google.com/file/d/1hsUUBLoqfHhrnufc2WIaK6y4tYLgZ0Xm/view?usp=sharing) | 0.3 0.3 0.4 0.4 0.5 | 17.8M(71.1%)     | 4507.5M(63.8%) | 0.4060 |
+
 Evaluates the model on COCO test.
 
-    $ python3 test.py --weights_path weights/yolov3.weights --pr_cfg 0.4 0.4 0.5 0.5 0.6
+    $ python3 test.py --weights_path experiments/baseline/best_ckpt.pth --pr_cfg 0 0 0 0 0 
+
+```
+$ python3 test.py --weights_path experiments/pr_1/best_ckpt.pth --pr_cfg 0.4 0.4 0.5 0.5 0.6 
+```
+
+```
+$ python3 test.py --weights_path experiments/pr_2/best_ckpt.pth --pr_cfg 0.3 0.3 0.4 0.4 0.5 
+```
 
 #### Other Arguments
 
