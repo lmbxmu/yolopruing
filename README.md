@@ -13,7 +13,7 @@ Pruning yolov3 and train on 6 class of COCO2014: person, bicycle, car, motorbike
 
 ```
 $ python3 python3 extract.py --save_path /media/coco_class_6 --data_dir /media/coco/
--save_path           target path to save specific class of coco dataset
+--save_path           target path to save specific class of coco dataset
 --data_dir           path of coco dataset
 ```
 
