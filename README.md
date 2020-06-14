@@ -62,11 +62,14 @@ $ tensorboard --logdir='logs' --port=6006
 
 ## Inference
 
-| Model(link)                                                  | Cfg                 | Parameter(prune) | FLOPs(prune)   | Map    |
-| ------------------------------------------------------------ | ------------------- | ---------------- | -------------- | ------ |
-| [Baseline](https://drive.google.com/file/d/1C2mjAH5bjvk-zRf5dytGoVrRTQehDQpn/view?usp=sharing) | 0 0 0 0 0           | 61.5M(0%)        | 12435.1M(0%)   | 0.4208 |
-| [Pr1](https://drive.google.com/file/d/1CRZcXqNFhWmFBeNXvL-v1wUlhGajGj9-/view?usp=sharing) | 0.4 0.4 0.5 0.5 0.6 | 11.8M(81.9%)     | 3204.9M(74.3%) | 0.3751 |
-| [Pr2](https://drive.google.com/file/d/1hsUUBLoqfHhrnufc2WIaK6y4tYLgZ0Xm/view?usp=sharing) | 0.3 0.3 0.4 0.4 0.5 | 17.8M(71.1%)     | 4507.5M(63.8%) | 0.4060 |
+| Model(link)                                                  | Cfg                    | Parameter(prune) | FLOPs(prune)   | Map    |
+| ------------------------------------------------------------ | ---------------------- | ---------------- | -------------- | ------ |
+| [Baseline](https://drive.google.com/file/d/1C2mjAH5bjvk-zRf5dytGoVrRTQehDQpn/view?usp=sharing) | 0 0 0 0 0              | 61.5M(0%)        | 12435.1M(0%)   | 0.4208 |
+| [Pr1](https://drive.google.com/file/d/1CRZcXqNFhWmFBeNXvL-v1wUlhGajGj9-/view?usp=sharing) | 0.4 0.4 0.5 0.5 0.6    | 11.8M(81.9%)     | 3204.9M(74.3%) | 0.3751 |
+| [Pr2](https://drive.google.com/file/d/1hsUUBLoqfHhrnufc2WIaK6y4tYLgZ0Xm/view?usp=sharing) | 0.3 0.3 0.4 0.4 0.5    | 17.8M(71.1%)     | 4507.5M(63.8%) | 0.4060 |
+| [Pr3](https://drive.google.com/file/d/1_f3PH5mVpoQii2HnVxb206K88_ub0KV9/view?usp=sharing) | 0.6 0.6 0.55 0.55 0.5  | 14.3M(76.8%)     | 2682.7M(78.5%) | 0.3648 |
+| [Pr4](https://drive.google.com/file/d/1cJ_3Xfsf5Xyldhwp7gJV3ZU-qqEP3OWt/view?usp=sharing) | 0.65 0.65 0.6 0.6 0.55 | 11.5M(82.4%)     | 2152.7M(82.7%) | 0.3573 |
+| [Pr5](https://drive.google.com/file/d/1_NMK9uIwRkKsIK4CEW7A-8SrbDZbiesE/view?usp=sharing) | 0.5 0.55 0.55 0.6 0.6  | 10.0M(83.8%)     | 2403.6M(81.7%) | 0.3641 |
 
 Evaluates the model on COCO test.
 
@@ -78,6 +81,18 @@ $ python3 test.py --weights_path experiments/pr_1/best_ckpt.pth --pr_cfg 0.4 0.4
 
 ```
 $ python3 test.py --weights_path experiments/pr_2/best_ckpt.pth --pr_cfg 0.3 0.3 0.4 0.4 0.5 
+```
+
+```
+$ python3 test.py --weights_path experiments/pr_3/best_ckpt.pth --pr_cfg 0.6 0.6 0.55 0.55 0.5
+```
+
+```
+$ python3 test.py --weights_path experiments/pr_4/best_ckpt.pth --pr_cfg 0.65 0.65 0.6 0.6 0.55
+```
+
+```
+$ python3 test.py --weights_path experiments/pr_5/best_ckpt.pth --pr_cfg 0.5 0.55 0.55 0.6 0.6
 ```
 
 #### Other Arguments

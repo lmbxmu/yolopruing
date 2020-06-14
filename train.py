@@ -127,8 +127,8 @@ if __name__ == "__main__":
     logger = utils.get_logger(os.path.join(opt.job_dir + 'logger.log'))
     logger.info(opt)
     
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    torch.cuda.set_device(0)
+    device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
+    torch.cuda.set_device(3)
     os.makedirs("output", exist_ok=True)
     os.makedirs("checkpoints", exist_ok=True)
 

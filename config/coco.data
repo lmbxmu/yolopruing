@@ -1,4 +1,4 @@
-classes= 6
+classes=6
 train=/media/disk2/zyx/coco_class_6/class_train.txt
 valid=/media/disk2/zyx/coco_class_6/class_val.txt
 names=data/coco.names

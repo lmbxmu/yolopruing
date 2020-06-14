@@ -352,15 +352,17 @@ class Darknet(nn.Module):
                 conv_layer.weight.data.cpu().numpy().tofile(fp)
 
         fp.close()
-'''
-model = Darknet('config/yolov3.cfg',pr_cfg=[0.15, 0.2, 0.25, 0.3, 0.35])
+
+model = Darknet('config/yolov3.cfg',pr_cfg=[0.5, 0.55, 0.55, 0.6, 0.6])
 Input = torch.randn(1, 3, 256, 256)
 flops, params = profile(model, inputs=(Input, ))
-#prune 6619.858944 27.84756 [0.15, 0.2, 0.25, 0.3, 0.35]
 #purne 4507.561984 17.859118 [0.3, 0.3, 0.4, 0.4, 0.5] 0.4060
 #prune 3204.894464 11.878838 [0.4, 0.4, 0.5, 0.5, 0.6] 0.3741
+#prune 2682.775296 14.309931 [0.6, 0.6, 0.55, 0.55, 0.5] pr 3
+#prune 2152.751104 11.466182 [0.65, 0.65, 0.6, 0.6, 0.55] pr 4 0.3573
+#prune 2403.582976 10.020993 [0.5, 0.55, 0.55, 0.6, 0.6] pr 5
+#prune 1992.57856 7.738486 [0.5, 0.55, 0.6, 0.65, 0.65] pr 6
 #tiny 1041.692288 8.669876
 #origin 12435.103744 61.523728
 print(flops/1000000, params/1000000)
 
-'''

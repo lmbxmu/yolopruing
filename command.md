@@ -1,3 +1,6 @@
+cd PyTorch-YOLOv3
+conda activate pt1.0
+
 python3 train.py --data_config config/coco.data  --pretrained_weights weights/darknet53.conv.74 --checkpoint_interval 10
 
 python3 test.py --weights_path weights/yolov3_ckpt_99.pth
@@ -24,6 +27,12 @@ python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6
 
 python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6_pr_2 --pretrained_weights weights/darknet53.conv.74 --lr_type ori --pr_cfg 0.3 0.3 0.4 0.4 0.5
 
-python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6_pr_3 --pretrained_weights weights/darknet53.conv.74 --lr_type ori --pr_cfg 0.15 0.2 0.25 0.3 0.35
+python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6_pr_3 --pretrained_weights weights/darknet53.conv.74 --lr_type ori --pr_cfg 0.6 0.6 0.55 0.55 0.5
+
+python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6_pr_4 --pretrained_weights weights/darknet53.conv.74 --lr_type ori --pr_cfg 0.65 0.65 0.6 0.6 0.55
+
+python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6_pr_5 --pretrained_weights weights/darknet53.conv.74 --lr_type ori --pr_cfg 0.5 0.55 0.55 0.6 0.6
+
+python3 train.py --data_config config/coco.data  --job_dir ./experiments/class_6_pr_6 --pretrained_weights weights/darknet53.conv.74 --lr_type ori --pr_cfg 0.5 0.55 0.6 0.65 0.65
 
 python3 extract_new.py --save_path /media/disk2/zyx/coco_class_2/ --data_dir /media/disk2/zyx/coco/
